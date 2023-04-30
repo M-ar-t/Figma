@@ -1143,7 +1143,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 .follow-us span a img:hover{
     opacity: 60%;
 }
-.footer-base-text:hover,.container-communication div a div:hover{
+a .footer-base-text:hover,.container-communication div a div:hover{
     opacity: 60%;
 }
 .icon-communication{
