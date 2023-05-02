@@ -13,6 +13,7 @@
         else{
             nav_header.classList.remove('header-nav-active')
             line.classList.remove('header-nav-line') 
+            first_sec.classList.remove('first-section-active')
             // burgerScroll.classList.remove('header_burger_scroll')
         }
     }
