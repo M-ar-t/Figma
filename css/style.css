@@ -498,6 +498,7 @@ nav{
     position: fixed;
     padding-top: 46px;
     padding-left: 115px;
+    transition: .3s;
 }
 .header{
     display: flex;
@@ -1095,18 +1096,19 @@ input[type="date"]{
     font-size: 15px;
     color: #B7B7B7;
 }
-input[type="button"]{
+button{
     width: 158px;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 17px;
     color: white;
+    border: none;
     background-color: #9F7464;
     border-radius: 10px;
     height: 45px;
     padding: 10px 33px;
 }
-input[type="button"]:hover{
+button:hover{
     transform: scale(1.01);
     background-color: #7f5d51;
 }
