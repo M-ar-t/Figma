@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="./slick.css">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./slick.min.js"></script>
 </head>
 <body>
     <div class="wrap_div_container">
@@ -80,7 +84,7 @@
             </div>    
         </section>
        <section class="second-section">
-        <div class="about-us" id="about-us">
+        <div class="about-us sectionItem" id="about-us">
             <div class="about-us-img">
                 <!-- <img src="./img/about-us-img.png" alt=""/> -->
             </div>
@@ -92,7 +96,7 @@
             </div>
         </div>
        </section>
-       <section class="section-third" id="our_tours">
+       <section class="section-third sectionItem" id="our_tours">
          <div class="container-see-Cappadocia">
             <div class="header-and-btn">
                 <p class="header-and-btn-text">
@@ -225,16 +229,13 @@
             </div>
         </div>
        </section>
-       <section class="fifth-section" id="explore">
+       <section class="fifth-section sectionItem"  id="explore">
         <div class="fifth-sec-top-blok">
             <div class="fifth-sec-top-blok-header">Explore one of the most beautiful place in th world</div>
             <div class="fifth-sec-top-blok-text">We would be delighted to share our gallery of stunning photos from Cappadocia with you! Our collection includes a range of images that showcase the natural beauty, cultural heritage, and unique attractions of this magical region.</div>
             <a href="#"><div class="fifth-sec-top-blok-btn">Open Gallery</div></a>
         </div>
         <div class="fifth-sec-bottom-blok">
-            <div class="fifth-sec-pic-item">
-                <a href="#"><img src="./img/fifth-sec-pic-1.png" alt=""/></a>
-            </div>
             <div class="fifth-sec-pic-item">
                 <a href="#"><img src="./img/fifth-sec-pic-2.png" alt=""/></a>
             </div>
@@ -245,7 +246,13 @@
                 <a href="#"><img src="./img/fifth-sec-pic-4.png" alt=""/></a>
             </div>
             <div class="fifth-sec-pic-item">
-                <a href="#"><img src="./img/fifth-sec-pic-5.png" alt=""/></a>
+                <a href="#"><img src="./img/fifth-sec-pic-2.png" alt=""/></a>
+            </div>
+            <div class="fifth-sec-pic-item">
+                <a href="#"><img src="./img/fifth-sec-pic-3.png" alt=""/></a>
+            </div>
+            <div class="fifth-sec-pic-item">
+                <a href="#"><img src="./img/fifth-sec-pic-4.png" alt=""/></a>
             </div>
         </div>
        </section>
@@ -288,12 +295,12 @@
           </div>
        </section>
        <section class="seventh-section">
-        <div class="seven-sec-top-blok" id="our-guides">
+        <div class="seven-sec-top-blok sectionItem" id="our-guides">
             <div class="seven-sec-top-blok-header">Our professional guides</div>
             <div class="seven-sec-top-blok-text">With years of experience, our guide is adept at providing insightful commentary and making your journey interesting and engaging. From the history and culture of the destinations you visit to the local customs and traditions, our guide will provide you with a wealth of information to enrich your travels.</div>
         </div>
         <div class="seven-sec-bottom-blok">
-            <div class="seven-sec-pic-item">
+            <div class="seven-sec-pic-item_with_desc">
                 <div><img src="./img/seven-sec-pic-1.png" alt=""></div>
                 <div class="seven-sec-pic-desc">
                     <p class="name-guides">
@@ -312,7 +319,9 @@
             </div>
             <div class="seven-sec-pic-item"><img src="./img/seven-sec-pic-2.png" alt=""></div>
             <div class="seven-sec-pic-item"><img src="./img/seven-sec-pic-3.png" alt=""></div>
-            <div class="seven-sec-pic-item"><img src="./img/seven-sec-pic-3.png" alt=""></div>
+            <div class="seven-sec-pic-item"><img src="./img/seven-sec-pic-2.png" alt=""></div>
+            <!-- <div class="seven-sec-pic-item"><img src="./img/seven-sec-pic-3.png" alt=""></div> -->
+        
         </div>
         <div class="seven-sec-navigation">
             <div class="seven-sec-nav-item"></div>
@@ -328,20 +337,20 @@
                 </div>
                 <div class="form-div">
                     <p>Let Us Plan Your Dream Trip - just fill out the form</p>
-                    <form>
-                        <input placeholder="Name">
-                        <input placeholder="Subname">
-                        <input placeholder="Email">
-                        <input placeholder="Phone Number">
+                    <form id="formData" action="">
+                        <div><input type="text" class ='' placeholder="Name" id="nameInput"></div>
+                        <div><input type="text" placeholder="Subname" id="subNameInput"></div>
+                        <div><input type="email" placeholder="Email" id="emailInput"></div>
+                        <div><input type="tel" placeholder="Phone Number" id="phoneInput"></div>                  
                         <div class="date-and-btn">
                             <input type="date">
-                            <button>Send</button>
+                            <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
             </div>
        </section>
-       <section class="footer-section" id="our_contscts">
+       <section class="footer-section sectionItem" id="our_contscts">
             <div class="footer-container">
                 <div class="footer-col-item">
                     <div class="adventures">
@@ -407,5 +416,5 @@
     </div>
 </body>
 <script src="./js.js"></script>
-
+<script src="./jquery.js"></script>
 </html>

@@ -491,7 +491,9 @@ nav ul li{
     margin-left: 0px;
     transition: .3s;
 }
-
+.fifth-sec-pic-item a img{
+    margin-right: 20px;
+}
 nav{
     display:inline;
     z-index: 2;
@@ -589,8 +591,8 @@ margin: 0;
 }
 .dots ul{
     position: absolute;
-    top: 48px;
-    left:-2px;
+    top: 38px;
+    left:-1.8px;
 }
 .dots ul li:nth-child(3){
   margin-left: -2px;
@@ -901,9 +903,7 @@ margin: 0;
 }
 
 .fifth-sec-bottom-blok{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    column-gap: 6px;
+
 }
 .fifth-sec-pic-item img{
     max-height: 485px;
@@ -944,7 +944,7 @@ h1{
 .sixth-sec-bottom-blok{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 30px;
+    column-gap: 100px;
 }
 .pic-desc-header{
     font-family: 'Poppins';
@@ -965,7 +965,8 @@ h1{
     color: #504f4f;
     font-weight: 500;
 }
-.seven-sec-pic-item:hover{
+.seven-sec-pic-item:hover,
+.seven-sec-pic-item_with_desc:hover{
     transform: scale(1.1);
 }
 .seven-sec-top-blok-header{
@@ -993,8 +994,8 @@ h1{
     max-width: 583px;
 }
 .seven-sec-bottom-blok{
-    display: grid;
-    grid-template-columns: 40% 30% 30% 10%;
+    display: flex;
+    grid-template-columns: 50% 20% 20% 10%;
     column-gap: 33px ;
     margin-bottom: 35px;
 }
@@ -1016,16 +1017,16 @@ h1{
     margin-bottom: 10px;
 }
 .seven-sec-pic-desc{
-    max-width: 270px;
+    width: 200px;
     max-height: 384px;
     background-color: #9F7464;
     padding: 19px 8px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
-.seven-sec-pic-item{
+.seven-sec-pic-item_with_desc{
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: auto 1fr;
     column-gap: 0px;
 }
 
@@ -1041,7 +1042,7 @@ h1{
     justify-content: center;
     margin-bottom: 102px;
 }
-.seven-sec-nav-item:first-child{
+.seven-sec-nav-item-active{
     background-color: #9F7464
 }
 .eight-section{
@@ -1058,6 +1059,7 @@ h1{
     background: url(../img/eight-sec-pic.png) center no-repeat;
     border-radius: 10px;
 }
+
 .form-div p{
     font-family: 'Montserrat';
     font-weight: 600;
@@ -1072,6 +1074,17 @@ input{
     border-radius: 10px;
     width: 361px;
     height: 45px;
+}
+.redValid{
+    border: solid 2px #c04949;
+}
+.greenValid{
+    border: solid 2px #49c055;
+}
+.validSpan{
+    display: block;
+    color: #c04949;;
+    padding-bottom: 10px;
 }
 input::placeholder{
     font-family: 'Poppins';
@@ -1096,7 +1109,7 @@ input[type="date"]{
     font-size: 15px;
     color: #B7B7B7;
 }
-button{
+button {
     width: 158px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -1614,4 +1627,25 @@ a .footer-base-text:hover,.container-communication div a div:hover{
             display: block  ;
         }
 }
+    }
+    .slick-dots li{
+        display: inline;
+    }
+    .slick-dots li button{
+        border-radius: 15px;
+        padding: 0;
+        width: 12px;
+        height: 12px;
+        border: rgba(0, 0, 0, 0.362) solid 2px;
+        margin-right: 20px;
+        background-color: rgba(255, 255, 255, 0.468);
+    }
+    .slick-dots{
+        text-align: center;
+        margin-top: 15px;
+    }
+    li.slick-active button{
+
+        background-color: rgba(77, 83, 78, 0.159);
+
     }
