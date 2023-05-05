@@ -65,6 +65,7 @@ jQuery(function(){
 
     function validEnter(curInput,validMes){
         curInput.on('blur', ()=>{
+            var ValidSycsess=false
             if (curInput.val() == ''){
                 curInput.removeClass('greenValid').addClass('redValid') 
                 if ($(curInput.siblings()).length==0){
@@ -74,27 +75,24 @@ jQuery(function(){
             else{
                 curInput.removeClass('redValid').addClass('greenValid')
                 $(curInput.siblings(['validSpan'])).remove()
+                ValidSycsess =true
             }
+            return ValidSycsess
         })
     }
     var curInput = [$('#nameInput') ,$('#subNameInput'), $('#emailInput'),$('#phoneInput')]
     var validMes = ['Enter your name!','Enter your subname!','Enter your Email!','Enter your phone number!']
-
+   
     for (let index = 0; index < curInput.length; index++) {
-        validEnter( curInput[index],validMes[index])
+       validEnter( curInput[index],validMes[index])
     }
 
 
     $('form').on('submit',(e)=>{
         e.preventDefault();
-        var validName = false
-        var validSubname = false
-        var validEmail = false
-        var validPhone = false
-
-
-        if(validName == true && validSubname == true &&
-            validEmail == true && validPhone == true){
+        var ValidAll = true
+        if(ValidAll == true){
+            console.log('form true');
             $('form').unbind().submit()
         }
     })

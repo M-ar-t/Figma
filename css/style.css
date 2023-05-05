@@ -1402,13 +1402,17 @@ a .footer-base-text:hover,.container-communication div a div:hover{
     
         .seven-sec-bottom-blok {
             display: grid;
-            grid-template-columns: 50% 25% 25%;
+            grid-template-columns: 45% 25% 25%;
             height: 240px;
             column-gap: 10px;
             margin-bottom: 35px;
         }
-       .seven-sec-pic-item div img, .seven-sec-pic-item img{
+       .seven-sec-pic-item div img, .seven-sec-pic-item img,
+       .seven-sec-pic-item_with_desc div img{
         height: 60%;
+       }
+       .seven-sec-pic-item:last-child{
+        display: none;
        }
        .seven-sec-pic-desc{
         height: 60%;
@@ -1519,7 +1523,7 @@ a .footer-base-text:hover,.container-communication div a div:hover{
         }
         .about-us{
             margin: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
             grid-template-columns: repeat(1, 1fr);
             
         }
@@ -1613,7 +1617,7 @@ a .footer-base-text:hover,.container-communication div a div:hover{
         }
         .date-and-btn{
             margin-right: 0px;
-            margin-left: 20px;
+            margin-left: 50px;
         }
         .footer-container{
             display: block;
@@ -1627,6 +1631,9 @@ a .footer-base-text:hover,.container-communication div a div:hover{
             display: block  ;
         }
 }
+
+
+
     }
     .slick-dots li{
         display: inline;
