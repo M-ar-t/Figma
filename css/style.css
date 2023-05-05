@@ -863,7 +863,7 @@ margin: 0;
 
 .fifth-sec-top-blok{
     max-width: 535px;
-    max-height: 328px;
+    /* max-height: 328px; */
     margin-bottom: 80px;
     margin-left: 200px;
 }
@@ -1576,6 +1576,9 @@ a .footer-base-text:hover,.container-communication div a div:hover{
         .sixth-section{
             margin: 0px;
         }
+        .fifth-sec-bottom-blok {
+            padding-top: 20px;
+        }
         .sixth-sec-top-blok{
             padding-left: 20px;
             display: block;
@@ -1615,9 +1618,12 @@ a .footer-base-text:hover,.container-communication div a div:hover{
             display: block;
             text-align: center;
         }
-        .date-and-btn{
-            margin-right: 0px;
-            margin-left: 50px;
+
+        .wrap-date-btn-div{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
         .footer-container{
             display: block;
