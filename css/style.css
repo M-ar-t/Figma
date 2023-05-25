@@ -515,6 +515,7 @@ nav{
     height: 28px;
     position: relative;
     display: none;
+    z-index: -100;
 }
 .burger_line{
     display: block;
@@ -1436,7 +1437,7 @@ a .footer-base-text:hover,.container-communication div a div:hover{
         text-align: center;
     }
     }
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 1355px) {
         .right_menu{
             transform: translateX(0);
             transition: .3s;
