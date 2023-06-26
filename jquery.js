@@ -50,6 +50,9 @@ jQuery(function(){
             variableWidth: true,
         });
 
+
+      
+
     $('.slick-dots li button').text('')
 
     
