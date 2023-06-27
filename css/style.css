@@ -1229,10 +1229,7 @@ a .footer-base-text:hover,.container-communication div a div:hover{
     margin-bottom: 7px;
     margin-top: 7px;
 }
- @media screen and (max-width: 1355px) {
-    
-    */
-} 
+
 @media screen and (max-width: 1177px) {
     nav li:nth-child(7) {
         padding-left: 100px;

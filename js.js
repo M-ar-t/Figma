@@ -47,7 +47,12 @@
         let href = this.getAttribute('href').substring(1);
         const scrollTarget = document.getElementById(href);
 
-        const topOffset = document.querySelector('nav').offsetHeight;
+        if ($(window).width() > 986) {
+            var topOffset = document.querySelector('nav').offsetHeight;
+        }else{
+            var topOffset = document.querySelector('.burger-nav').offsetHeight;
+        }   
+       
         const elementPosition = scrollTarget.getBoundingClientRect().top;
         const offsetPosition = elementPosition - topOffset;
         

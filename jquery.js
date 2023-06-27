@@ -17,7 +17,6 @@ jQuery(function(){
             'border-bottom': '4px white solid'});
     })
 
-
 //подчеркивание ссылки при скроллинге на этот блок
 
         $('.sectionItem').on('mouseenter', function(){
